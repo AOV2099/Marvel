@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "262149012697",
+    "project_id": "coppelexam",
+    "storage_bucket": "coppelexam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262149012697:android:f7713b9e883bb4862212c8",
+        "android_client_info": {
+          "package_name": "com.aov2099.marvel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262149012697-g6rkqa01huo45qc0ce1rogbrv50i3d5v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aov2099.marvel",
+            "certificate_hash": "dff2c3ccf3eacd993c95aeb0af00cda61dc8bc65"
+          }
+        },
+        {
+          "client_id": "262149012697-7mghjnlv9ivu3vsutfcjc6sc9hksnstj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8zJFN4oy2E1iUsbAP3QxnE9UVecQcc5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262149012697-7mghjnlv9ivu3vsutfcjc6sc9hksnstj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

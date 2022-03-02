@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Marvel</string>
+
+    <string name="prefs_data">PREFERENCE_FILE_KEY</string>
+</resources>

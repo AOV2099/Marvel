@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/DetailFragment">
+
+    <fragment
+        android:id="@+id/DetailFragment"
+        android:name="com.aov2099.marvel.view.fragments.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_DetailFragment_to_comicsFragment"
+            app:destination="@id/comicsFragment" />
+        <action
+            android:id="@+id/action_DetailFragment_to_urlsFragment"
+            app:destination="@id/urlsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comicsFragment"
+        android:name="com.aov2099.marvel.view.fragments.ComicsFragment"
+        android:label="fragment_comics"
+        tools:layout="@layout/fragment_comics" >
+        <action
+            android:id="@+id/action_comicsFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+        <argument android:name="characterId"
+            app:argType="string"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/urlsFragment"
+        android:name="com.aov2099.marvel.view.fragments.UrlsFragment"
+        android:label="fragment_urls"
+        tools:layout="@layout/fragment_urls" >
+        <action
+            android:id="@+id/action_urlsFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+    </fragment>
+</navigation>
