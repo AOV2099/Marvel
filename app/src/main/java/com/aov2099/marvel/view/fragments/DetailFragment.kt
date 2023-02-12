@@ -44,10 +44,11 @@ class DetailFragment : Fragment() {
             binding.tvDetailDesc.text = "Sin descripción disponible"
         }
 
-        imgUrl.replace("http", "https")
+        imgUrl = imgUrl.replace("http", "https")
+
         Log.i("IMG", imgUrl)
 
-        Picasso.get().load("https://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg").into(binding.ivDetailImage)
+        Picasso.get().load(imgUrl).into(binding.ivDetailImage)
 
         return binding.root
     }
