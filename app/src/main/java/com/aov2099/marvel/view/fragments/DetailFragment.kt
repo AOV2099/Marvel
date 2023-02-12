@@ -1,9 +1,11 @@
 package com.aov2099.marvel.view.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
@@ -31,16 +33,21 @@ class DetailFragment : Fragment() {
         var imgUrl = activity?.intent?.extras?.getString(CHARACTER_EXTRA_IMAGE)
 
         imgUrl =  "$imgUrl.jpg"
-        imgUrl.replace("http", "https")
+
+
+
+        //Toast.makeText(this.requireContext(), imgUrl, Toast.LENGTH_LONG).show()
 
         if(!characterDesc.isNullOrEmpty()){
             binding.tvDetailDesc.text = characterDesc
         }else{
             binding.tvDetailDesc.text = "Sin descripción disponible"
         }
-        Picasso.get().load(imgUrl).into(binding.ivDetailImage)
 
+        imgUrl.replace("http", "https")
+        Log.i("IMG", imgUrl)
 
+        Picasso.get().load("https://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg").into(binding.ivDetailImage)
 
         return binding.root
     }
